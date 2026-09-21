@@ -3,7 +3,7 @@ import { GoogleGenAI } from '@google/genai';
 // 1. Define CORS handling as a dedicated helper function
 const allowCors = (fn) => async (req, res) => {
   res.setHeader('Access-Control-Allow-Credentials', true);
-  res.setHeader('Access-Control-Allow-Origin', '*'); // Swap with your GitHub Pages URL for production security
+  res.setHeader('Access-Control-Allow-Origin', 'ericl22.github.io');
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
   res.setHeader(
     'Access-Control-Allow-Headers',
